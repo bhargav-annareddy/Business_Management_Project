@@ -21,6 +21,6 @@ jobs:
       - name: Run shell script
         run: |
           pwd
-          chmod +x $(pwd)/target/classes/script.sh
-          ./$(pwd)/target/classes/script.sh
+          chmod target/classes/script.sh
+          ./target/classes/script.sh
 
