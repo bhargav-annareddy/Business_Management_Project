@@ -21,6 +21,6 @@ jobs:
       - name: Run shell script
         run: |
           pwd
-          chmod script.sh
+          chmod +x script.sh
           ./script.sh
 
