@@ -2,4 +2,4 @@
 echo "Script is running"
 pwd
 ls
-echo "${BUSINESS_PROJECT}" 
+echo "${secret.BUSINESS_PROJECT}" 
