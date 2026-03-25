@@ -20,6 +20,6 @@ jobs:
 
       - name: Run shell script
         run: |
-          chmod +x $(pwd)/Business_Management_Project/target/classes/script.sh
-          ./$(pwd)/Business_Management_Project/target/classes/script.sh
+          chmod +x $(pwd)/target/classes/script.sh
+          ./$(pwd)/target/classes/script.sh
 
