@@ -21,7 +21,7 @@ jobs:
       - name: Run shell script
         run: chmod +x script.sh
         
-      - name: List files
+      - name: List file
         env: 
           BUSINESS_PROJECT: ${{ secrets.BUSINESS_PROJECT }}
         run: ./script.sh
