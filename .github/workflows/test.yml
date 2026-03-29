@@ -1,0 +1,33 @@
+name: tesy workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: AWS Environment
+        type: choice
+        required: true
+        options:
+          - master
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+      - name: Run shell script
+        run: chmod +x script.sh
+        
+      - name: List files
+        env: 
+          BUSINESS_PROJECT: ${{ secrets.BUSINESS_PROJECT }}
+        run: ./script.sh
