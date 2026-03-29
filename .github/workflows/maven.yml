@@ -1,6 +1,7 @@
 name: Run Shell Script
 
 on:
+  workflow_dispatch:   # manual run
   push:
     branches: [ Master ]
 
