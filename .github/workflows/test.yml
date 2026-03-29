@@ -1,14 +1,9 @@
 name: tesy workflow
 
 on:
-  workflow_dispatch:
-    inputs:
-      env:
-        description: AWS Environment
-        type: choice
-        required: true
-        options:
-          - master
+  workflow_dispatch:   # manual run
+  push:
+    branches: [ dev ]
 
 jobs:
   run-script:
